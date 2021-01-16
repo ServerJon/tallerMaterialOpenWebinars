@@ -3,6 +3,11 @@
     <mat-icon >menu</mat-icon>
   </button>
   <span id="titulo">Taller Angular Material OpenWebinars</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" (click)="openDialog()" *ngIf="!usuario">
+    <mat-icon >account_circle</mat-icon>
+  </button>
+  <span *ngIf="usuario" (click)="openDialog()">{{ usuario }}</span>
 </mat-toolbar>
 <mat-sidenav-container id="contenedor">
   <mat-sidenav #desplegable mode="side">Menu lateral</mat-sidenav>
