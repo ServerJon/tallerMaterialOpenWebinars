@@ -1,0 +1,14 @@
+<div class="contenedor flex">
+  <mat-card *ngFor="let foto of fotos">
+    <mat-card-header>
+      <mat-card-title>{{ foto.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="foto.url">
+    <mat-card-content>
+      <p>
+        {{ foto.thumbnailUrl }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+

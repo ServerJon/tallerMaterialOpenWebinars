@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './views/formulario/formulario.component';
 import { TablaComponent } from './views/tabla/tabla.component';
+import { TarjetaComponent } from './views/tarjeta/tarjeta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    TablaComponent
+    TablaComponent,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,
