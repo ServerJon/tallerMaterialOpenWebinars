@@ -10,7 +10,12 @@
   <span *ngIf="usuario" (click)="openDialog()">{{ usuario }}</span>
 </mat-toolbar>
 <mat-sidenav-container id="contenedor">
-  <mat-sidenav #desplegable mode="side">Menu lateral</mat-sidenav>
+  <mat-sidenav #desplegable mode="side">
+    <p routerLink="/tabla" style="padding: 10px;">
+      <mat-icon>table_chart</mat-icon>
+      Tablas
+    </p>
+  </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
