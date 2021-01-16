@@ -1,0 +1,15 @@
+#titulo {
+  margin-left: 10px;
+}
+
+#contenedor {
+  height: 100%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav {
+  width: 200px;
+}

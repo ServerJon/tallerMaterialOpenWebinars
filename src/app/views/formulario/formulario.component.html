@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>¡Bienvenido al taller de Angular Material de OpenWebinars!</h1>
+<div mat-dialog-content>
+  <form #usuarioForm="ngForm" class="m-t-20">
+    <mat-form-field appearance="fill" class="m-t-20">
+      <mat-label>Introducir Usuario</mat-label>
+      <input matInput placeholder="Usuario" [(ngModel)]="usuario" name="user" #usuarioRf="ngModel" required>
+      <mat-error *ngIf="usuarioRf.invalid && usuarioRf.dirty">
+        <div *ngIf="usuarioRf.errors?.required">Nombre obligatorio</div>
+    </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="warn" (click)="cerrarDialogo()">Cerrar</button>
+    <button type="submit" mat-raised-button color="primary" class="m-t-20 m-l-10" [mat-dialog-close]="usuario">Entrar</button>
+  </form>
+</div>
+

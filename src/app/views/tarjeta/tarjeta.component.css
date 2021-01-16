@@ -1,0 +1,11 @@
+mat-card {
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+
+}
